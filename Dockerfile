@@ -1,4 +1,4 @@
-FROM library/rabbitmq:3.6
+FROM library/ubuntu:16.04
 MAINTAINER Yasuyuki YAMADA <yasuyuky@idein.jp>
 
 RUN apt-get -y update && apt-get -y install curl gcc pkg-config git
