@@ -1,4 +1,4 @@
-FROM ubuntu:18:04
+FROM ubuntu:18.04
 MAINTAINER Yasuyuki YAMADA <yasuyuky@idein.jp>
 
 RUN apt-get -y update && apt-get -y install curl gcc pkg-config git
