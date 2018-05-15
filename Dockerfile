@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 MAINTAINER Yasuyuki YAMADA <yasuyuky@idein.jp>
 
 RUN apt-get -y update && apt-get -y install curl gcc pkg-config git
