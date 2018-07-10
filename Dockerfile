@@ -4,7 +4,7 @@ MAINTAINER Yasuyuki YAMADA <yasuyuky@idein.jp>
 RUN apt-get -y update\
  && apt-get -y install --no-install-recommends curl ca-certificates gcc libc6-dev pkg-config git openssh-client\
  && apt-get clean && rm -rf /var/lib/apt/lists/*
-ENV RUST_VERSION 1.26.2
+ENV RUST_VERSION 1.27.0
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUST_VERSION}
 ENV PATH $PATH:/root/.cargo/bin
 RUN rustup component add rustfmt-preview
